@@ -220,6 +220,7 @@ export async function depositFromBasketCurrency(
         rateSnapshot: {
           deposit_currency: currency,
           amount: amountNum,
+          organizationId: req.apiKey?.organizationId ?? null,
           timestamp: new Date().toISOString(),
         },
       },
